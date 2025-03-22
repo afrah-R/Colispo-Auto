@@ -38,10 +38,12 @@ module.exports = defineConfig({
     specPattern: 'cypress/e2e/**/*.feature',
 
     supportFile:false,
-    
+
      // Ajout de la configuration pour le timeout
      defaultCommandTimeout: 10000, // 10 secondes, ajustable selon tes besoins
 
+      // Configuration du reporter pour console
+    reporter: 'cypress-mochawesome-reporter',
   },
 
 })
